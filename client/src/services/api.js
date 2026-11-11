@@ -7,7 +7,7 @@ const api = axios.create({
     'Content-Type': 'application/json',
   },
 });
-
+console.log("API BASE URL:", api.defaults.baseURL);
 // Add JWT token to requests
 api.interceptors.request.use(
   (config) => {
